@@ -1,0 +1,69 @@
+﻿Use the NESSUS to scan the network for vulnerabilities
+    
+   
+Nessus is one of the most popular and capable vulnerability scanners, particularly for UNIX systems. It was initially free and open source, but they closed the source code in 2005 and removed the free "Registered Feed" version in 2008. It now costs $1,200 per year, which still beats many of its competitors. A free "Home Feed" is also available, though it is limited and only licensed for home network use. Nessus is constantly updated with more than 46,000 plug-ins. Key features include remote and local (authenticated) security checks, client/server architecture with a web-based interface, and an embedded scripting language for writing your own plug-ins or understanding the existing ones.
+Installation Steps:
+    
+1. Download Nessus setup file
+- Go to www.tenable.com -> products -> Nessus-> download
+- Download Nessus for ubuntu14.4
+2. Install Nessus
+● Open a Terminal and go to the download directory (cd)
+● Run sudo dpkg -i Nessus*.deb. Enter root password.
+● Start it sudo /etc/init.d/nessusd start
+    
+3. After installation, go to https://localhost:8834
+- Click on Get started for registration
+- Initial account setup: provide login details
+     
+       
+- Plug-in feed registration
+a) Go to http://www.nessus.org/register/ for registration and activation code. Register by entering user details and valid mail id. Activation code will be sent to the given mail id.
+      b) Activate using supplied activation code
+      c) Click on download plug-in
+      d) It will show following fetching plug-ins window
+                                 
+     
+- Sign in for Nessus vulnerability scanner using login name and password
+4. Create scan by clicking scan-> add scan -> provide scan details(scan name, type of scan, target addr etc)
+5. Check vulnerability report in Results
+    
+    
+Basic Network scanning
+     
+Advanced Scanning in General Search
+      
+      
+     
+Ntstat port scanning
+     
+Vulnerability Mapping
+     
+Policies
+      
+      
+     
+Plugins
+     
+General Scanning
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Port scanning
+
+
+
